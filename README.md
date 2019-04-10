@@ -1,4 +1,4 @@
-[logo]: (https://github.com/MenSeb/react-calculator/blob/master/public/logo.svg =250x250) "Calculator logo"
+[logo]: https://github.com/MenSeb/react-calculator/blob/master/public/logo.svg "Calculator logo"
 
 ![alt text][logo]
 
