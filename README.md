@@ -1,6 +1,6 @@
-[logo]: https://github.com/MenSeb/react-calculator/blob/master/public/logo.svg "Calculator logo"
+[logo]: https://github.com/MenSeb/react-calculator/blob/master/public/logo.svg =250x250 "Calculator logo"
 
-![alt text][logo](=100x100)
+![alt text][logo]
 
 # Calculator
 
