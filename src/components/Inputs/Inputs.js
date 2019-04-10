@@ -12,6 +12,7 @@ export default function Inputs ()
         key={ input }
         value={ input }
         title={ input }
+        className='Input'
       />
     )
   )
