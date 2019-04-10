@@ -1,19 +1,25 @@
-import React, { useContext } from 'react'
-import { CalculatorContext } from '../../contexts/calculator'
+import React from 'react'
+import propTypes from './types'
 
-export default function Inputs ()
+Inputs.propTypes = propTypes
+
+export default function Inputs ({ inputs, ...props })
 {
-  const { inputs } = useContext( CalculatorContext )
-
-  return inputs.map(
-    input => (
-      <input
-        type='button'
-        key={ input }
-        value={ input }
-        title={ input }
-        className='Input'
-      />
-    )
+  return (
+    <section { ...props }>
+    {
+      inputs.map(
+        input => (
+          <input
+            type='button'
+            key={ input }
+            value={ input }
+            title={ input }
+            className='Input'
+          />
+        )
+      )
+    }
+    </section>
   )
 }
