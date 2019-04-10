@@ -13,7 +13,6 @@ export default function Inputs ({ inputs, ...props })
         key={ input }
         value={ input }
         title={ input }
-        className={ className }
       />
     )
   )
