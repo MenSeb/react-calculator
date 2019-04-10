@@ -1,37 +1,32 @@
-[logo]: https://github.com/MenSeb/react-foreign-exchange/blob/master/public/logo.svg "Foreign Exchange logo"
+[logo]: https://github.com/MenSeb/react-calculator/blob/master/public/logo.svg "Calculator logo"
 
 ![alt text][logo]
 
-# Foreign Exchange
+# Calculator
 
-The main purpose of this project is to convert an amount of money with exchange rates.
+The main purpose of this project is to reproduce a calculator.
 
 This project was build with React & SASS.
 
 The application is made only of functionnal components and hooks.
 
-The transition between views was made with [react-transition-group](https://reactcommunity.org/react-transition-group/).
+The calculation is made with [math expression evaluator](http://redhivesoftware.github.io/math-expression-evaluator/) API.
 
-The exchange rates came from [open exchange rates](https://openexchangerates.org/) API.
-
-The idea behind this project was to explore/practice/show the use of an external API, fetch API, HTML form and transitions between views/states.
+The calculator layout was made using a Grid system.
 
 ## Github Pages Demo
 
-[Foreign Exchange demo](https://menseb.github.io/react-foreign-exchange/)
+[Calculator](https://menseb.github.io/react-calculator/)
 
 ## Features
 
-- Error
-- Exchange
-- Loading
+- Functions
+- Operands
+- Operators
 
 ## Todos
 
-- [ ] Configure keyboard event to show/test Loading & Error components
-- [ ] Use input type number instead of type text for mobile keyboard
-- [ ] Fix layout while entering amount on a mobile keyboard ( no compression )
-- [ ] Styling HTML select element ( should use a custom semantic select )
+- [ ]
 
 ## Scripts
 
