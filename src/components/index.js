@@ -1,5 +1,11 @@
-import Input from './Input'
+import Equation from './Equation'
+import Inputs from './Inputs';
+import Message from './Message';
+import Result from './Result';
 
 export {
-  Input,
+  Equation,
+  Inputs,
+  Message,
+  Result,
 }
