@@ -9,10 +9,4 @@
   );
 
   padding: $padding;
-
-  grid-template-areas:
-    'equation equation equation'
-    'result result result'
-    'message message message'
-    'functions operands operators';
 }
