@@ -1,0 +1,4 @@
+%flex-center
+{
+  @include flex-parent( $ai: center, $jc: center );
+}
