@@ -1,4 +1,12 @@
 output
 {
+  @include flex-parent( $ai: center, $d: row-reverse );
 
+  padding: $padding;
+
+  color: $colorBackground;
+  background: $colorColor;
+
+  border: $border;
+  border-radius: $radius;
 }
