@@ -1,6 +1,6 @@
 import React from 'react'
 import { CalculatorProvider } from '../contexts'
-import { Equation, Output, Message, Inputs } from '../components'
+import { Equation, Inputs, Message, Result } from '../components'
 
 export default function App ()
 {
@@ -10,7 +10,7 @@ export default function App ()
 
         <Equation />
 
-        <Output />
+        <Result />
 
         <Message />
 
