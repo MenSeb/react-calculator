@@ -2,7 +2,5 @@
 {
   @extend %full-size, %flex-center;
 
-  @include grid-parent( $g: $padding );
-
   overflow: hidden;
 }
