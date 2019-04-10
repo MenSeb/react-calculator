@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version='1.1' viewBox='-10 -10 20 20' xmlns='http://www.w3.org/2000/svg'>
+  <g id='logo'>
+    <path id='background' fill='#232855' d='M-9 -9 h18 v18 h-18 z' />
+    <path id='border' fill='#215b63' d='M-9 -9 h18 v18 h-18 z M-8 -8 v16 h16 v-16 z' />
+    <path id='result' fill='#ffffe3' d='M-6.5 -6.5 h13 v3 h-13 z' />
+
+    <g id='inputs' fill='#5fcc9c'>
+      <path d='M-6.5 -2.5 h2.5 v2.5 h-2.5 z' />
+      <path d='M-3 -2.5 h2.5 v2.5 h-2.5 z' />
+      <path d='M0.5 -2.5 h2.5 v2.5 h-2.5 z' />
+      <path d='M4 -2.5 h2.5 v2.5 h-2.5 z' />
+
+      <path d='M-6.5 1 h2.5 v2.5 h-2.5 z' />
+      <path d='M-3 1 h2.5 v2.5 h-2.5 z' />
+      <path d='M0.5 1 h2.5 v2.5 h-2.5 z' />
+      <path d='M4 1 h2.5 v2.5 h-2.5 z' />
+
+      <path d='M-6.5 4.5 h2.5 v2.5 h-2.5 z' />
+      <path d='M-3 4.5 h2.5 v2.5 h-2.5 z' />
+      <path d='M0.5 4.5 h2.5 v2.5 h-2.5 z' />
+      <path d='M4 4.5 h2.5 v2.5 h-2.5 z' />
+    </g>
+  </g>
+</svg>
