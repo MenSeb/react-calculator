@@ -1,0 +1,18 @@
+.Calculator
+{
+  @extend %full-size;
+
+  @include grid-parent(
+    $tr: repeat( 3, 15% ) 1fr,
+    $tc: repeat( 3, 1fr ),
+    $g: $padding
+  );
+
+  padding: $padding;
+
+  grid-template-areas:
+    'equation equation equation'
+    'result result result'
+    'message message message'
+    'functions operands operators';
+}
