@@ -26,7 +26,12 @@ The calculator layout was made using a Grid system.
 
 ## Todos
 
-- [ ]
+- [ ] Implement calculation logic with math expression evaluator API
+- [ ] Implement multiple layouts using grid template areas
+- [ ] Implement click inputs using push/pop on stacks
+- [ ] Implement result output from calculation
+- [ ] Implement equation output from inputs click
+- [ ] Implement message output from valid/error in math API
 
 ## Scripts
 
