@@ -1,0 +1,16 @@
+.operands
+{
+  @include grid-parent(
+    $tr: repeat( 4, 1fr ),
+    $tc: repeat( 3, 1fr ),
+    $g: $padding,
+  );
+
+  grid-area: 'operands';
+
+  grid-template-areas:
+    'seven eight nine'
+    'four five six'
+    'one two three'
+    'zero zero zero';
+}

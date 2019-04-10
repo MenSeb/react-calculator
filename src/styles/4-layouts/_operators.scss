@@ -1,0 +1,17 @@
+.operators
+{
+  @include grid-parent(
+    $tr: repeat( 5, 1fr ),
+    $tc: repeat( 2, 1fr ),
+    $g: $padding,
+  );
+
+  grid-area: 'operators';
+
+  grid-template-areas:
+    'reset clear'
+    'pow sign'
+    'div mul'
+    'min add'
+    'dot equal';
+}
