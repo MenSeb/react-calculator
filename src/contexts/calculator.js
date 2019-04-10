@@ -8,7 +8,7 @@ const { Consumer: CalculatorConsumer, Provider } = CalculatorContext
 
 function CalculatorProvider ({ children, ...props })
 {
-  const inputs = useRef([ ...FUNCTIONS, ...OPERANDS, ...OPERATORS ])
+  const { current: inputs } = useRef([ ...FUNCTIONS, ...OPERANDS, ...OPERATORS ])
 
   const { calculate, ...calculator } = useCalculator()
 
