@@ -5,3 +5,11 @@
     grid-area: #{ $function };
   }
 }
+
+@each $value, $area in map-merge( $operands, $operators )
+{
+  input[ value='#{ $value }' ]
+  {
+    grid-area: #{ $area };
+  }
+}
