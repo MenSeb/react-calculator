@@ -6,7 +6,6 @@ export default function App ()
 {
   return (
     <div className='App'>
-
       <CalculatorProvider>
 
         <Equation />
@@ -18,7 +17,6 @@ export default function App ()
         <Inputs />
 
       </CalculatorProvider>
-
     </div>
   )
 }
