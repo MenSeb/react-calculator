@@ -3,4 +3,6 @@
   @extend %full-size, %flex-center;
 
   overflow: hidden;
+  padding: $padding;
+  background-color: $colorBackground;
 }
