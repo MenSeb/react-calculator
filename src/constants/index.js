@@ -1,9 +1,9 @@
-import FUNCTIONS from './functions'
-import OPERANDS from './operands'
-import OPERATORS from './operators'
+import functions from './functions'
+import operands from './operands'
+import operators from './operators'
 
 export {
-  FUNCTIONS,
-  OPERANDS,
-  OPERATORS,
+  functions,
+  operands,
+  operators,
 }
