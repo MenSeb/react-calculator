@@ -1,5 +1,5 @@
 import React from 'react'
-import { CalculatorProvider } from '../contexts'
+import { CalculatorProvider } from '../contexts/calculator'
 import { Equation, Inputs, Message, Result } from '../components'
 
 export default function App ()
