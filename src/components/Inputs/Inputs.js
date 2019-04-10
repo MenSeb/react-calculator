@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { CalculatorContext } from '../../contexts/calculator';
 
 export default function Inputs ()
 {
-  const inputs = []
+  const { inputs } = useContext( CalculatorContext )
 
   return inputs.map(
     input => (
