@@ -2,11 +2,5 @@
 {
   @extend %full-size;
 
-  @include grid-parent(
-    $tr: repeat( 3, 15% ) 1fr,
-    $tc: repeat( 3, 1fr ),
-    $g: $padding
-  );
-
   padding: $padding;
 }
