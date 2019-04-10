@@ -1,0 +1,7 @@
+@each $function in $functions
+{
+  input[ value='#{ $function }' ]
+  {
+    grid-area: #{ $function };
+  }
+}
