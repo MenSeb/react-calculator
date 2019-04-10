@@ -1,5 +1,4 @@
 import React, { createContext, useRef } from 'react'
-import { element } from 'prop-types'
 import { useCalculator } from '../hooks'
 import { FUNCTIONS, OPERANDS, OPERATORS } from '../constants'
 
@@ -20,10 +19,6 @@ function CalculatorProvider ({ children, ...props })
       </form>
     </Provider>
   )
-}
-
-CalculatorProvider.propTypes = {
-  children: element.isRequired,
 }
 
 export {
