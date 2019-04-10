@@ -1,0 +1,11 @@
+@mixin size ( $w: null, $h: null )
+{
+  width: $w;
+  height: $h;
+}
+
+@mixin box-size ( $s )
+{
+  width: $s;
+  height: $s;
+}

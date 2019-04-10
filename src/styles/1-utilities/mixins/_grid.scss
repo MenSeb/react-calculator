@@ -1,0 +1,25 @@
+@mixin grid-parent (
+  $tr: null,
+  $tc: null,
+  $ta: null,
+  $gr: null,
+  $gc: null,
+  $g: null,
+  $ji: null,
+  $ai: null,
+  $jc: null,
+  $ac: null,
+)
+{
+  display: grid;
+  grid-template-rows: $tr;
+  grid-template-columns: $tc;
+  grid-template-areas: $ta;
+  grid-row-gap: $gr;
+  grid-column-gap: $gc;
+  grid-gap: $g;
+  justify-items: $ji;
+  align-items: $ai;
+  justify-content: $jc;
+  align-content: $ac;
+}
