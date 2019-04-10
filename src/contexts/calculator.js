@@ -11,7 +11,7 @@ function CalculatorProvider ({ children, ...props })
 
   return (
     <Provider value={ calculator }>
-      <form className='Calculator' onClick={ calculate }>
+      <form className='Calculator basic' onClick={ calculate }>
         { children }
       </form>
     </Provider>
