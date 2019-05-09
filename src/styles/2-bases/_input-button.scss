@@ -18,11 +18,11 @@ input[ type=button ]
     outline: 0;
   }
 
-  &:focus,
   &:active
   {
     background: $color-border;
     border-color: $color-hover;
     color: $color-hover;
+    transition-duration: .1s;
   }
 }
