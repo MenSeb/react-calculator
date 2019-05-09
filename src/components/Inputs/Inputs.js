@@ -1,19 +1,18 @@
-import React from 'react'
-import propTypes from './types'
+import React, { useContext, useMemo } from 'react'
+import { CalculatorContext } from '../../contexts/calculator'
 
-Inputs.propTypes = propTypes
-
-export default function Inputs ({ inputs, ...props })
+export default function CalculatorInputs ()
 {
-  return inputs.map(
-    input => (
-      <input
-        { ...props }
-        type='button'
-        key={ input }
-        value={ input }
-        title={ input }
-      />
-    )
+  const { inputs, mode } = useContext( CalculatorContext )
+
+  console.log({ mode });
+
+
+  const currentInputs = useMemo( () => inputs[ mode ], [ mode ] )
+
+  return (
+    <section id='CalculatorInputs' className={ mode }>
+      { currentInputs }
+    </section>
   )
 }
