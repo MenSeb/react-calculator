@@ -1,5 +1,5 @@
 export default {
   'base': 'Mode basic',
-  'sci-fi': 'Mode scientific',
+  'scifi': 'Mode scientific',
   'trigo': 'Mode trigonometric',
 }
