@@ -5,9 +5,6 @@ export default function CalculatorInputs ()
 {
   const { inputs, mode } = useContext( CalculatorContext )
 
-  console.log({ mode });
-
-
   const currentInputs = useMemo( () => inputs[ mode ], [ mode ] )
 
   return (
