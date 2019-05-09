@@ -1,15 +1,16 @@
 input[ type=button ]
 {
-  @extend %flex-center;
-
-  background: $color-background;
-  border: $border;
-  border-radius: $radius;
+  background: scale-color( $color-background, $lightness: 2.5% );
+  border: 1.5px outset $color-border;
   color: $color-color;
+  cursor: pointer;
+  transition-timing-function: ease-in-out;
+  transition: color .35s;
+  transform: translate3d( 0, 0, 1.5px );
+  transform-style: preserve-3d;
 
   &:hover
   {
-    border-color: $color-color;
     color: $color-hover;
   }
 
@@ -20,9 +21,8 @@ input[ type=button ]
 
   &:active
   {
-    background: $color-border;
-    border-color: $color-hover;
-    color: $color-hover;
-    transition-duration: .1s;
+    background: scale-color( $color-background, $lightness: -2.5% );
+    border-style: inset;
+    transform: translate3d( 0, 0, -1.5px );
   }
 }
