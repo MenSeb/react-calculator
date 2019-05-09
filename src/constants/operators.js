@@ -1,12 +1,8 @@
-export default [
-  '+',
-  '-',
-  '×',
-  '÷',
-  '^',
-  '=',
-  '.',
-  '±',
-  'C',
-  'CE',
-]
+export default {
+  '+': 'plus',
+  '-': 'minus',
+  '×': 'multiply',
+  '÷': 'divide',
+  '.': 'dot',
+  '±': 'sign',
+}
