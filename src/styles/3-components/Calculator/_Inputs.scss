@@ -40,7 +40,7 @@
     }
   }
 
-  &.sci-fi
+  &.scifi
   {
     @include grid-parent(
       $tc: repeat( 4, 1fr ),
@@ -51,7 +51,7 @@
         'P fact ％ close'
     );
 
-    input:not( [ class*=sci-fi ] )
+    input:not( [ class*=scifi ] )
     {
       display: none;
     }
