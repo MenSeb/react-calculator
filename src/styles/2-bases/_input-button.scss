@@ -1,0 +1,26 @@
+input[ type=button ]
+{
+  background: $color-background;
+  border: $border;
+  border-radius: $radius;
+  color: $color-color;
+
+  &:hover
+  {
+    border-color: $color-color;
+    color: $color-hover;
+  }
+
+  &:focus
+  {
+    outline: 0;
+  }
+
+  &:focus,
+  &:active
+  {
+    background: $color-border;
+    border-color: $color-hover;
+    color: $color-hover;
+  }
+}
