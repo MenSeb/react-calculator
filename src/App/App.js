@@ -1,18 +1,14 @@
 import React from 'react'
 import { CalculatorProvider } from '../contexts/calculator'
-import { Operands, Operators, Result } from '../components'
+import { CalculatorContainer } from '../containers'
 
 export default function App ()
 {
   return (
-    <div className='App'>
+    <div id='Calculator'>
       <CalculatorProvider>
 
-        <Result />
-
-        <Operands />
-
-        <Operators />
+        <CalculatorContainer />
 
       </CalculatorProvider>
     </div>
