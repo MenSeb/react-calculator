@@ -15,6 +15,11 @@
         'one two three min'
         'sign zero dot add'
     );
+
+    input:not( [ class*=opera ] )
+    {
+      display: none;
+    }
   }
 
   &.trigo
@@ -28,6 +33,11 @@
         'sinh cosh tanh'
         'asinh acosh atanh'
     );
+
+    input:not( [ class*=trigo ] )
+    {
+      display: none;
+    }
   }
 
   &.sci-fi
@@ -40,6 +50,11 @@
         'M e log open'
         'P fact ％ close'
     );
+
+    input:not( [ class*=sci-fi ] )
+    {
+      display: none;
+    }
   }
 
   @each $map in $inputs
