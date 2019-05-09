@@ -1,8 +1,11 @@
-.App
+#Calculator
 {
   @extend %full-size, %flex-center;
 
+  background: $color-background;
   overflow: hidden;
-  padding: $padding;
-  background-color: $colorBackground;
+  padding: 10px;
+  perspective: 100vw;
+
+  @import './Calculator/index';
 }

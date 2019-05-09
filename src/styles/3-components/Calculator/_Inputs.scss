@@ -1,0 +1,55 @@
+&Inputs
+{
+  @include grid-parent( $g: 5px );
+
+  grid-area: inputs;
+
+  &.base
+  {
+    @include grid-parent(
+      $tc: repeat( 4, 1fr ),
+      $tr: repeat( 4, 1fr ),
+      $ta:
+        'seven eight nine div'
+        'four five six mul'
+        'one two three min'
+        'sign zero dot add'
+    );
+  }
+
+  &.trigo
+  {
+    @include grid-parent(
+      $tc: repeat( 3, 1fr ),
+      $tr: repeat( 4, 1fr ),
+      $ta:
+        'sin cos tan'
+        'asin acos atan'
+        'sinh cosh tanh'
+        'asinh acosh atanh'
+    );
+  }
+
+  &.sci-fi
+  {
+    @include grid-parent(
+      $tc: repeat( 4, 1fr ),
+      $tr: repeat( 3, 1fr ),
+      $ta:
+        'C π ln pow'
+        'M e log open'
+        'P fact ％ close'
+    );
+  }
+
+  @each $map in $inputs
+  {
+    @each $value, $area in $map
+    {
+      input[ value='#{ $value }' ]
+      {
+        grid-area: #{ $area };
+      }
+    }
+  }
+}

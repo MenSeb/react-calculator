@@ -1,0 +1,16 @@
+&Modes
+{
+  @include grid-parent( $g: 2.5px, $tc: repeat( 3, 1fr ) );
+
+  grid-area: modes;
+
+  input[ type='button' ]
+  {
+    font-size: .5em;
+
+    &[ aria-pressed=true ]
+    {
+      border-style: inset;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+&Form
+{
+  @extend %full-size;
+
+  @include grid-parent(
+    $g: 10px,
+    $tr: 5fr 1.25fr 7.5fr,
+    $ta: 'outputs' 'settings' 'inputs'
+  );
+}

@@ -1,0 +1,14 @@
+&Outputs
+{
+  @include grid-parent( $tr: repeat( 3, 1fr ), $g: 5px );
+
+  grid-area: outputs;
+
+  > *
+  {
+    @extend %flex-center;
+
+    border: 1.5px solid $color-border;
+    border-radius: 2.5px;
+  }
+}
