@@ -1,5 +1,7 @@
 input[ type=button ]
 {
+  @extend %flex-center;
+
   background: $color-background;
   border: $border;
   border-radius: $radius;
