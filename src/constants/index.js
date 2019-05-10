@@ -2,7 +2,7 @@ import HELPERS from './helpers'
 import MODES from './modes'
 import OPERANDS from './operands'
 import OPERATORS from './operators'
-import SCIENCES from './sciences'
+import SCIFIS from './scifis'
 import TRIGOS from './trigos'
 
 export {
@@ -10,6 +10,6 @@ export {
   MODES,
   OPERANDS,
   OPERATORS,
-  SCIENCES,
+  SCIFIS,
   TRIGOS,
 }
