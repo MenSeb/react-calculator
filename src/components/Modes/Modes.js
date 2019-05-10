@@ -1,24 +1,9 @@
-import React, { useCallback, useContext, useMemo } from 'react'
+import React, { useContext, useMemo } from 'react'
 import { CalculatorContext } from '../../contexts/calculator';
 
 export default function CalculatorModes ()
 {
-  const { mode, MODES, setCalculator } = useContext( CalculatorContext )
-
-  const update = useCallback(
-    ({ target: { value } }) => setCalculator(
-      calculator =>
-      {
-        const { mode } = calculator
-
-        if ( !value || value === mode )
-          return calculator
-
-        return { ...calculator, mode: value }
-      }
-    ),
-    []
-  )
+  const { mode, MODES, setMode } = useContext( CalculatorContext )
 
   const modes = useMemo(
     () => Object.entries( MODES ).map(
@@ -36,7 +21,7 @@ export default function CalculatorModes ()
   )
 
   return (
-    <section id='CalculatorModes' onClick={ update }>
+    <section id='CalculatorModes' onClick={ setMode }>
       { modes }
     </section>
   )
