@@ -2,19 +2,13 @@ import { useCallback, useState } from 'react'
 
 export default function useCalculator ()
 {
+  const [ mode, setMode ] = useState( 'base' )
+
   const [ calculator, setCalculator ] = useState({
-    equation: '',
-    result: '',
-    message: '',
+    equation: '2 + 4 + 5',
+    result: '11',
+    message: 'message',
   })
 
-  const calculate = useCallback(
-    () =>
-    {
-
-    },
-    []
-  )
-
-  return { calculate, ...calculator }
+  return { mode, setMode, ...calculator }
 }
