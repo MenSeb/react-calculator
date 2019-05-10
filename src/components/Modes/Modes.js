@@ -3,13 +3,20 @@ import { CalculatorContext } from '../../contexts/calculator';
 
 export default function CalculatorModes ()
 {
-  const { mode, MODES, setMode } = useContext( CalculatorContext )
+  const { mode, MODES, setCalculator } = useContext( CalculatorContext )
 
-  const updateMode = useCallback(
-    ({ target: { value } }) => setMode(
-      mode => value && mode !== value ? value : mode
+  const update = useCallback(
+    ({ target: { value } }) => setCalculator(
+      calculator =>
+      {
+        const { mode } = calculator
+
+        if ( !value || value === mode ) return calculator
+
+        return { ...calculator, mode: value }
+      }
     ),
-    [ setMode ]
+    []
   )
 
   const modes = useMemo(
@@ -28,7 +35,7 @@ export default function CalculatorModes ()
   )
 
   return (
-    <section id='CalculatorModes' onClick={ updateMode }>
+    <section id='CalculatorModes' onClick={ update }>
       { modes }
     </section>
   )
