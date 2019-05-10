@@ -3,7 +3,7 @@ import { CalculatorContext } from '../../contexts/calculator'
 
 export default function CalculatorOutput ()
 {
-  const { calculator: { equation, message, result } } = useContext( CalculatorContext )
+  const { equation, message, result } = useContext( CalculatorContext )
 
   return (
     <section id='CalculatorOutputs'>
