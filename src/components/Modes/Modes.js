@@ -11,7 +11,8 @@ export default function CalculatorModes ()
       {
         const { mode } = calculator
 
-        if ( !value || value === mode ) return calculator
+        if ( !value || value === mode )
+          return calculator
 
         return { ...calculator, mode: value }
       }
