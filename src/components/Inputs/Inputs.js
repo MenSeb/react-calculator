@@ -3,13 +3,28 @@ import { CalculatorContext } from '../../contexts/calculator'
 
 export default function CalculatorInputs ()
 {
-  const { inputs, mode } = useContext( CalculatorContext )
+  const { INPUTS, mode } = useContext( CalculatorContext )
 
-  const currentInputs = useMemo( () => inputs[ mode ], [ mode ] )
+  const inputs = useMemo(
+    () => Object.entries( INPUTS ).map(
+      ([ category, inputs ]) => Object.entries( inputs ).map(
+        ([ value, title ]) => (
+          <input
+            className={ category }
+            key={ value }
+            title={ title }
+            type='button'
+            value={ value }
+          />
+        )
+      )
+    ),
+    [ INPUTS ]
+  )
 
   return (
     <section id='CalculatorInputs' className={ mode }>
-      { currentInputs }
+      { inputs }
     </section>
   )
 }
