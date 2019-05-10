@@ -23,11 +23,11 @@ export default function CalculatorModes ()
     () => Object.entries( MODES ).map(
       ([ value, title ]) => (
         <input
+          aria-pressed={ value === mode }
           key={ value }
           title={ title }
           type='button'
           value={ value }
-          aria-pressed={ value === mode }
         />
       )
     ),
