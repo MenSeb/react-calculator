@@ -7,10 +7,5 @@
   input[ type='button' ]
   {
     font-size: .5em;
-
-    &[ aria-pressed=true ]
-    {
-      border-style: inset;
-    }
   }
 }

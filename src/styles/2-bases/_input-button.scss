@@ -19,7 +19,8 @@ input[ type=button ]
     outline: 0;
   }
 
-  &:active
+  &:active,
+  &[ aria-pressed=true ]
   {
     background: scale-color( $color-background, $lightness: -2.5% );
     border-style: inset;
